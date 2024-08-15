@@ -25,6 +25,8 @@ public class ContaTerminal {
 		agencia = scanner.nextInt();
 		
 		// Consome a nova linha residual
+		//Sem o "scanner.nextLine" abaixo,  estava dando erro no nomeCli
+		//O mesmo estava pulando linha e não permetia digitar no nome soliciado. 
 		scanner.nextLine();
 		
 		System.out.println("Digite Seu nome Completo");
