@@ -19,10 +19,11 @@ public class ContaTerminal {
 		
 		System.out.println("Digite o Numero da conta");
 		numero = scanner.nextInt();
-		
+		System.out.println("---------------------------------");
 		
 		System.out.println("Digite o Numero da agencia");
 		agencia = scanner.nextInt();
+		System.out.println("---------------------------------");
 		
 		// Consome a nova linha residual
 		//Sem o "scanner.nextLine" abaixo,  estava dando erro no nomeCli
@@ -31,18 +32,19 @@ public class ContaTerminal {
 		
 		System.out.println("Digite Seu nome Completo");
 		nomeCli = scanner.nextLine();
+		System.out.println("---------------------------------");
 		
 		
 		
 		System.out.println("Será necessário um valor de Deposito");
 		System.out.println("Digite o Valor do Deposito");
 		saldo = scanner.nextDouble();
-		
+		System.out.println("---------------------------------");
 		
 		
 		System.out.println("Ola " + nomeCli + ", obrigado por criar"
-				+ " uma conta em nosso banco" + ", Sua agencia é " +agencia+ 
-				 ", seu numero da conta é " +numero+ " e seu saldo é " + saldo);
+				+ " uma conta em nosso banco" + ", Sua agência é " +"("+agencia+")"+ 
+				 ", seu numero da conta é " +"("+numero+")"+ " e seu saldo é " +"(R$ "+saldo+")");
 		
 		
 	}
